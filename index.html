@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone-Hunting</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <section class="container mx-auto mt-10">
+            <h1 class="text-6xl font-bold text-center">Hunting Phone</h1>
+        </section>
+    </header>
+    <main class="container mx-auto mt-10">
+        <section class="bg-gray-300 mb-10">
+            <div class="p-4">
+                <input id="input-field" type="text" placeholder="Search here!!"
+                    class="input input-bordered input-accent w-full max-w-xs" />
+                <button onclick="clickHandler()" class="btn btn-active btn-primary">Primary</button>
+            </div>
+        </section>
+
+        <div id="loading-spinner" class=" hidden text-center mt-10">
+            <span class="loading loading-spinner loading-lg"></span>
+        </div>
+
+        <div id="phone-container" class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
+            <!-- <div class="card w-96 bg-gray-300 shadow-xl">
+                <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div> -->
+        </div>
+
+        <div id="show-all" class="hidden mt-10 m-auto text-center mb-10">
+            <button onclick ="showAllBtn()" onclick="clickHandler()" class="btn btn-active btn-primary">Show All</button>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="js/phone.js"></script>
+</body>
+
+</html>
